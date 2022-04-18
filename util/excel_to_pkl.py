@@ -3,7 +3,7 @@ import re
 import pickle
 import os
 
-#사전 xls 파일에서 3글자만 가져와서 pickle로 저장.
+# 사전 xls 파일에서 3글자만 가져와서 pickle로 저장.
 
 only_3word_list = []
 xls_dir_path = "../dict_xls"
@@ -31,7 +31,6 @@ for (root, directories, files) in os.walk(xls_dir_path):
             print(filtered_list)
             only_3word_list.extend(filtered_list)
             print(len(only_3word_list))
-
 
 with open('../dict_pkl/only_3word.pkl', 'wb') as f:
     pickle.dump(only_3word_list, f)

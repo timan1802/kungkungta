@@ -10,7 +10,7 @@ import easyocr
 import findword
 
 # ocr 초기화
-reader = easyocr.Reader(['ko'], gpu=True)
+reader = easyocr.Reader(['ko'], gpu=False)
 
 root = Tk()
 output_box = Text(root)

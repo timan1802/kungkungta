@@ -11,7 +11,9 @@ def find_word_list(first_word):
     return word_list
 
 
-def find_word(first_word, exclude=[]):
+def find_word(first_word, exclude=None):
+    if exclude is None:
+        exclude = []
     found_word_list = find_word_list(first_word)
     if len(found_word_list) == 0:
         return 'No Such Word'
