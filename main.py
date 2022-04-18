@@ -31,7 +31,7 @@ def resource_path(relative_path):
 
 
 # 화면창 띄우기, 마우스 우 클릭으로 포지션 설정
-def start():
+def set_position():
     global x1, y1, x2, y2
 
     # 투명한 캔버스 띄우기
@@ -77,7 +77,7 @@ def start():
     text_out()
 
 
-# 같은 위치 또 crop
+# OCR 반복
 def repeat():
     if x1 is None:
         print("마우스 포지션 설정 먼저 하세요.")
@@ -96,7 +96,7 @@ def text_out():
     global history_word_list
     result = reader.readtext(resource_path('textimage.png'), detail=0)
     print('ocr 인식 : ', result)
-    if len(result) != 1:
+    if len(result) != 1: # 한개의 글자만
         return
     result = result[0]
 
@@ -111,7 +111,7 @@ def history_clear():
     history_word_list = []
 
 
-keyboard.add_hotkey('ctrl+e', start)
+keyboard.add_hotkey('ctrl+e', set_position)
 keyboard.add_hotkey('ctrl+r', repeat)
 keyboard.add_hotkey('ctrl+t', history_clear)
 mainloop()
