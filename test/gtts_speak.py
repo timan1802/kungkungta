@@ -1,6 +1,8 @@
 import io
+
 from IPython.display import Audio
 from gtts import gTTS
+
 
 # To play audio text-to-speech during execution
 def speak(my_text):

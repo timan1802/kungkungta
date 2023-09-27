@@ -1,7 +1,8 @@
-import pandas as pd
-import re
-import pickle
 import os
+import pickle
+import re
+
+import pandas as pd
 
 # 사전 xls 파일에서 3글자만 가져와서 pickle로 저장.
 

@@ -1,14 +1,10 @@
+import os
 import sys
+import time
+from tkinter import *
 
 import pyautogui
-import os
-from tkinter import *
-import time
-import mouse
-import keyboard
 from PIL import Image
-
-
 
 root = Tk()
 output_box = Text(root)

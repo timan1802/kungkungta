@@ -1,9 +1,7 @@
 
-from gtts import gTTS
-import os
-import time
 import playsound
-from io import BytesIO
+from gtts import gTTS
+
 
 def speak(text):
      tts = gTTS(text=text, lang='ko')

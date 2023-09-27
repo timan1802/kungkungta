@@ -1,12 +1,13 @@
-import sys
-
-import pyautogui
 import os
-from tkinter import *
+import sys
 import time
-import mouse
-import keyboard
+from tkinter import *
+
 import easyocr
+import keyboard
+import mouse
+import pyautogui
+
 import findword
 
 # ocr 초기화

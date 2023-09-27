@@ -1,5 +1,7 @@
 # pip install requests hgtk
-import requests, hgtk, random
+import hgtk
+import random
+import requests
 
 # 이미 있는 단어 알기위해 단어목록 저장
 history = []

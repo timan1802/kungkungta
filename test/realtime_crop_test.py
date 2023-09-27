@@ -1,13 +1,13 @@
-import pyautogui
 # import pytesseract
 import os
-from tkinter import *
-import cv2
 import time
-import mouse
-import keyboard
-from PIL import Image
+from tkinter import *
+
+import cv2
 import easyocr
+import keyboard
+import mouse
+import pyautogui
 
 reader = easyocr.Reader(['ko'], gpu=True)
 # pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'

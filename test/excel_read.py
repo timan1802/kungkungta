@@ -1,7 +1,4 @@
 import pandas as pd
-import re
-import pickle
-import os
 
 #UnicodeDecodeError: 'utf-16-le' codec can't decode bytes in position 40-41: unexpected end of data
 # df = pd.read_excel("../dict_xls/951675_420000.xls", engine='xlrd')

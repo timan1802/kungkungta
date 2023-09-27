@@ -1,5 +1,4 @@
 from bs4 import BeautifulSoup
-import os
 
 fp = open("../dict_xml/951730_5000.xml", "r",  encoding='UTF8')
 soup = BeautifulSoup(fp, "lxml")

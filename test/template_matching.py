@@ -1,7 +1,6 @@
 # 템플릿 매칭으로 객체 위치 검출 (template_matching.py)
 
 import cv2
-import numpy as np
 
 # 입력이미지와 템플릿 이미지 읽기
 img = cv2.imread('../img/hint.png')
