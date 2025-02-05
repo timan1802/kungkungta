@@ -1,4 +1,6 @@
 # kungkungta
+python 3.8
+
 main.py  실행
 
 1. ctrl+e, 글자 위치 좌표 설정 지정.
