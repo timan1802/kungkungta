@@ -11,7 +11,7 @@ import pyautogui
 import findword
 
 # ocr 초기화
-reader = easyocr.Reader(['ko'], gpu=False)
+reader = easyocr.Reader(['ko'], gpu=True)
 
 root = Tk()
 output_box = Text(root)
